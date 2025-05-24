@@ -5,6 +5,7 @@ class Solution {
         int n = result.length();
         while(i<n && j<n)
         {
+            
             while(i<n && start.charAt(i) == 'X')
             {
                 i++;
@@ -13,8 +14,10 @@ class Solution {
             {
                 j++;
             }
+           
             if(i<n && j<n)
             {
+                 
                 if(start.charAt(i) != result.charAt(j))
                 {
                     return false;
@@ -23,8 +26,9 @@ class Solution {
                 {
                     return false;
                 }
-                if(start.charAt(j) == 'R' && i>j)
+                if(start.charAt(i) == 'R' && i>j)
                 {
+
                     return false;
                 }
                 i+=1;
